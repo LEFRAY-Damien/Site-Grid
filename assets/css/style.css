@@ -1,0 +1,74 @@
+/* BODY */
+body{margin: 0; padding: 0;}
+
+/* GRID */
+.cont-grid{display: grid;}
+.cont-grid1{display: grid;grid-template-columns: 50% 50%;}
+.cont-grid2{display: grid;grid-template-rows:auto;}
+.cont-grid3{display: grid;grid-template-columns: auto auto auto;}
+.cont-grid4{display: grid;grid-template-rows: 40% 15% auto 15%;}
+.cont-grid5{display: grid;grid-template-columns: auto;}
+.cont-grid6{display: grid;grid-template-rows: auto;justify-items: center;}
+.cont-grid7{display: grid; grid-template-rows: auto;
+            grid-template-columns: 30% 1fr 30%;
+            grid-template-areas: ". . ." ". foote ." ". . .";}
+.cont-grid8{display: grid;grid-template-columns: 10% auto 260px;
+            grid-template-areas: "titts . coll";}
+.cont-grid9{display: grid;
+            grid-template-rows: auto;
+            grid-template-columns:25% 25% 25% 25%;
+            grid-template-areas:". . . ." "ws as cs ms" ". . . .";
+            grid-template-rows: auto;}
+.cont-grid10{display: grid;grid-template-columns: auto auto auto;}
+
+/* BG COLOR */
+.bg-wheat{background-color: wheat;}
+.bg-seagreen{background-color: seagreen;}
+.bg-blueviolet{background-color: blueviolet;}
+.bg-lightcoral{background-color: lightcoral;}
+.bg-lightgreen{background-color: lightgreen;}
+.bg-gray{background-color: gray;}
+
+a{color: white; text-decoration: none;}
+
+/* ITEMS */
+.actus{height: 200px;margin: auto;}
+.item1{margin: 10px;padding: 10px;}
+.titreh4{height: 60px;}
+.date{margin-bottom: 0px; text-align: right;}
+.txt{margin: auto;text-align: center;}
+.ba{margin: 10px;text-align: right; margin-right: 20px;}
+.bb{margin:10px}
+.bc{margin: 10px auto 10px;}
+.lien{margin-bottom: 10px;}
+h1{margin-top: 70px;}
+
+
+/* Images */
+.img{display: block;background-size: cover;background-position:top center;
+     background-repeat: no-repeat;height: 110px;}
+
+/* FOOTER */
+footer{background-color: black; color: burlywood; text-align: center ; height: 40px;}
+.foot{grid-area: foote;}
+
+/* Nav barre */
+nav{text-align: center;position: fixed;top: 0;width: 100%;
+    background-color: gray; color: white;}
+.titt{grid-area: titts;}
+.col{grid-area: coll;}
+.w{grid-area: ws;}
+.a{grid-area: as;}
+.c{grid-area: cs;}
+.m{grid-area: ms;}
+
+/* Responsive */
+@media screen and (max-width: 680px){
+
+.cont-grid3{grid-template-columns: none;
+            grid-template-rows:auto;}
+
+.cont-grid1{grid-template-columns: none;
+            grid-template-rows: auto;
+            justify-items: center;}
+}
